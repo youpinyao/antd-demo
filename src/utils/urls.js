@@ -1,0 +1,20 @@
+
+export const permission = '/auth/index';
+export const config = '/config/config';
+export const account = '/agent/account';
+export const homeTable = '/index/json';
+export const logout = '/login/logout';
+export const subuser = '/subuser/lists';
+export const subuserDeactivate = '/subuser/deactivate';
+export const subuserActivate = '/subuser/activate';
+export const subuserRecharge = '/subuser/recharge';
+export const subuserAuthSwitch = '/subuser/authswitch';
+export const subuserDel = '/subuser/del';
+export const subuserCheck = '/subuser/check';
+export const upload = '/upload/upload';
+export const subuserIndustry = '/subuser/industry';
+export const province = '/region/provinces';
+export const city = '/region/citys';
+export const subuserAdd = '/subuser/add';
+export const subuserInfo = '/subuser/info';
+export const subuserUpdate = '/subuser/update';

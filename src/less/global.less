@@ -1,0 +1,77 @@
+@import "~antdstyle/mixins/clearfix.less";
+
+:global {
+  .data-line {
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    line-height: 120px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .account-data-line-container {
+    width: 100%;
+    /*padding-left: 10px;*/
+    float: left;
+  }
+  .account-data-line {
+    .clearfix;
+    margin: 0 -10px;
+    .ant-col-12 ,
+    .ant-col-8 {
+      padding: 0 10px;
+    }
+  }
+  .account-data-line ul {
+    display: inline-block;
+  }
+  .account-data-line .data-content-line {
+    display: inline-block;
+    /*border-right: 1px solid #e6e6e6;*/
+    line-height: 20px;
+    padding: 0 20px;
+    /*width: 32%;*/
+  }
+  .account-data-line .data-content-line div {
+    display: inline-block;
+  }
+  /*.account-data-line .data-content-line:last-child {
+  border-right: 0;
+}*/
+  .account-data-line .data-content {
+    vertical-align: middle;
+    text-align: left;
+  }
+  .account-data-line .data-title {
+    color: #494949;
+    font-size: 18px;
+    display: block;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .account-data-line .data {
+    display: block;
+    color: #ef526f;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  .account-data-line .data-2 {
+    display: block;
+    font-size: 20px;
+    color: #999;
+    padding-top: 8px;
+    span {
+      font-size: 18px;
+    }
+  }
+  .account-data-line .data-content-line img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}

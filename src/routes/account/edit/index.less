@@ -1,0 +1,48 @@
+.buttons {
+  width: @form-width;
+  margin: 0 auto;
+  :global(.ant-btn) {
+    float: right;
+    margin-left: 50px;
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.form {
+  width: @form-width;
+  margin: 0 auto !important;
+  input,
+  textarea,
+  :global(.ant-select) {
+    width: @input-max-width;
+  }
+  :global(.ant-form-item-with-help) {
+    margin-bottom: @input-height-base;
+  }
+  :global(.ant-form-explain) {
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+  }
+  :global(.ant-form-extra) {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: @form-width - @input-max-width - @form-width / 24 * 4;
+  }
+  .w240 {
+    width: @input-max-width;
+  }
+  .avatar-uploader {
+    display: inline-block;
+    width: @input-max-width;
+    vertical-align: top;
+  }
+
+  .ant-upload-with-text-list {
+    width: @input-max-width;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

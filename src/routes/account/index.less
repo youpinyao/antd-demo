@@ -1,0 +1,69 @@
+.alert {
+  margin-bottom: 20px;
+}
+.tips {
+  display: inline-block;
+  width: 16px;
+  vertical-align: middle;
+}
+
+:global {
+  /* table cell  */
+  .col-realName > div {
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  .col-userName > div {
+    min-width: 100px;
+    max-width: 200px;
+  }
+
+  .col-industry > div {
+    width: 80px;
+  }
+
+  .col-userState > div {
+    width: 120px;
+    max-width: 120px;
+  }
+
+  .col-consumeAmount > div {
+    width: 90px;
+    float: right;
+  }
+
+  .col-remainAmount > div {
+    width: 90px;
+    float: right;
+  }
+
+  .col-createdDate > div {
+    width: 80px;
+  }
+
+  .col-oper > div {
+    min-width: 150px;
+    display: inline-block;
+  }
+}
+
+
+.table-opr {
+  display: inline-block;
+  margin: 0;
+}
+
+.table-opr li {
+  float: left;
+  padding: 0 10px;
+}
+
+.table-opr li > a {
+  color: #34abff;
+}
+
+ul.table-opr li:first-child {
+  float: left;
+  padding: 0 10px 0 0;
+}

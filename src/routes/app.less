@@ -1,0 +1,51 @@
+.logo {
+  float: left;
+  padding-top: 12px;
+  padding-right: 50px;
+  line-height: normal;
+  img {
+    vertical-align: top;
+  }
+}
+
+.content {
+  padding :20px;
+}
+
+:global(.has-second-nav) {
+  .content {
+    padding-top: 60px;
+  }
+}
+
+.menu {
+  line-height: @header-height;
+  float: left;
+}
+
+.header {
+  height: @header-height;
+  line-height: @header-height;
+}
+
+
+.info {
+  float: right;
+  font-size: 16px;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  :global(.head) {
+    position: relative;
+    top: -1px;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
