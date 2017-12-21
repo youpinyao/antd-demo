@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const aliOss = require('meetyou-ali-oss');
+// const aliOss = require('meetyou-ali-oss');
 const lessToJs = require('less-vars-to-js');
 
 const less = fs.readFileSync('./node_modules/meetyou-antd-base/src/less/vars.less', 'utf8');
@@ -10,11 +10,11 @@ module.exports = {
   devtool: 'source-map',
   port: '8080',
   host: '0.0.0.0',
-  path: 'dist',
+  path: 'dist/assets',
   vendors: ['react', 'dva', 'antd', 'jquery', 'moment', 'js-cookie', 'babel-polyfill'],
   entrys: [{
     template: 'src/index.html',
-    filename: 'index.html',
+    filename: '../views/index.html',
     entry: 'src/index.js',
   }],
   lessOptions: {
@@ -43,8 +43,7 @@ module.exports = {
   afterBuild() {
     // aliOss({
     //   deduplication: true,
-    //   srcDir: './dist',
-    //   ignoreSuffix: 'html',
+    //   srcDir: './dist/assets',
     //   prefix: 'my-dsp-agent-front',
     // }).then(() => {
     //   // 上传成功
