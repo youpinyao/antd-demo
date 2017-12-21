@@ -43,7 +43,7 @@ module.exports = {
   afterBuild() {
     // aliOss({
     //   deduplication: true,
-    //   srcDir: './dist/assets',
+    //   srcDir: './dist',
     //   ignoreSuffix: 'html',
     //   prefix: 'my-dsp-agent-front',
     // }).then(() => {
