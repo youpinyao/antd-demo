@@ -21,7 +21,7 @@ module.exports = {
     modifyVars: vars,
   },
   // 需要同项目一起构建
-  buildInclude: /(node_modules\/meetyou-antd-base)/,
+  buildInclude: '(node_modules/meetyou-antd-base)',
   production: {
     publicPath: '//estatic.seeyouyima.com/my-dsp-agent-front/',
     extraBabelPlugins: [
