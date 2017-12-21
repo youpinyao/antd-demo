@@ -10,11 +10,11 @@ module.exports = {
   devtool: 'source-map',
   port: '8080',
   host: '0.0.0.0',
-  path: 'dist/assets',
+  path: 'dist',
   vendors: ['react', 'dva', 'antd', 'jquery', 'moment', 'js-cookie', 'babel-polyfill'],
   entrys: [{
     template: 'src/index.html',
-    filename: '../views/index.html',
+    filename: 'index.html',
     entry: 'src/index.js',
   }],
   lessOptions: {
@@ -44,6 +44,7 @@ module.exports = {
     // aliOss({
     //   deduplication: true,
     //   srcDir: './dist/assets',
+    //   ignoreSuffix: 'html',
     //   prefix: 'my-dsp-agent-front',
     // }).then(() => {
     //   // 上传成功
