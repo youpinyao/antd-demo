@@ -44,9 +44,9 @@ function request(opt) {
         // 未登录，跳到登录页面
         if (data.status === 403) {
           message.error(data.responseJSON.message);
-          setTimeout(() => {
-            window.location.href = '/';
-          }, 1000);
+          // setTimeout(() => {
+          //   window.location.href = '/';
+          // }, 1000);
         } else if (options.errorTip) {
           if (data.status === 400) {
             message.error(data.responseJSON.message || '未知错误');
