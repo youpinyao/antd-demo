@@ -15,7 +15,7 @@
     "jquery": "^1.12.4",
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.4",
-    "meetyou-antd-base": "0.0.9",
+    "meetyou-antd-base": "0.0.10",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.19.2",
     "query-string": "^5.0.1",
