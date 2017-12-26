@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import { message } from 'antd';
 
+let isLoginTimeout = false;
+
 export function get(url, data, opt) {
   const options = {
     ...(opt || {}),
@@ -43,10 +45,13 @@ function request(opt) {
       (data) => {
         // 未登录，跳到登录页面
         if (data.status === 403) {
-          message.error(data.responseJSON.message);
-          // setTimeout(() => {
-          //   window.location.href = '/';
-          // }, 1000);
+          if (!isLoginTimeout) {
+            isLoginTimeout = true;
+            message.error(data.responseJSON.message);
+            setTimeout(() => {
+              window.location.href = '/';
+            }, 1000);
+          }
         } else if (options.errorTip) {
           if (data.status === 400) {
             message.error(data.responseJSON.message || '未知错误');
