@@ -1,6 +1,5 @@
 
 import 'babel-polyfill';
-import 'react-polyfills';
 import 'meetyou-antd-base/src/less/theme.less';
 import 'less/global.less';
 
