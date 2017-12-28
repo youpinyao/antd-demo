@@ -20,7 +20,8 @@
     "moment": "^2.19.2",
     "query-string": "^5.0.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-polyfills": "0.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
