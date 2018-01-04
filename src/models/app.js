@@ -174,6 +174,13 @@ export default {
         if (lodash.startsWith(payload.locationPathname, menu.path)) {
           mergeState.selectedMenu = menu;
         }
+        if (!mergeState.selectedMenu && menu.activePath) {
+          menu.activePath.forEach((path) => {
+            if (lodash.startsWith(payload.locationPathname, path)) {
+              mergeState.selectedMenu = menu;
+            }
+          });
+        }
       });
 
       return {
