@@ -52,6 +52,11 @@ function request(opt) {
               window.location.href = '/';
             }, 1000);
           }
+        } else if (data.status === 200) {
+          message.error('接口错误，请查看控制台');
+          console.log('====================================');
+          console.log(data.responseText);
+          console.log('====================================');
         } else if (options.errorTip) {
           if (data.status === 400) {
             message.error(data.responseJSON.message || '未知错误');
@@ -59,7 +64,10 @@ function request(opt) {
             message.error('接口不存在');
           }
         }
-        reject(data.responseJSON);
+        reject(data.responseJSON || {
+          error_code: '',
+          message: '接口错误，请查看控制台',
+        });
       },
     );
   });
