@@ -54,11 +54,15 @@ class App extends React.Component {
             mode="horizontal"
             selectedKeys={selectedMenuKeys}
             defaultSelectedKeys={selectedMenuKeys}
-            onSelect={({ key }) => onSelect(key)}
+            // onSelect={({ key }) => onSelect(key)}
             className={styles.menu}
           >
             {this.props.app.menus.map((menu) => {
-              return <Menu.Item key={menu.key}>{menu.name}</Menu.Item>;
+              return (
+                <Menu.Item key={menu.key}>
+                  <div onClick={() => onSelect(menu.key)}>{menu.name}</div>
+                </Menu.Item>
+              );
             })}
           </Menu>
           <div className={styles.info}>
