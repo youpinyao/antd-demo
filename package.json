@@ -39,6 +39,6 @@
     "meetyou-ali-oss": "^1.0.6",
     "nodemon": "^1.12.1",
     "redbox-react": "^1.4.3",
-    "ywebpack": "0.0.45"
+    "ywebpack": "^0.0.54"
   }
 }
