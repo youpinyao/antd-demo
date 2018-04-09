@@ -4,7 +4,6 @@ import {
 } from 'meetyou-antd-base';
 
 export default class Crumb extends React.Component {
-  state = {};
   render() {
     return (
       <SecondMenu>
