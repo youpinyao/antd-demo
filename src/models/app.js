@@ -107,14 +107,16 @@ export default {
       });
     },
     *selectMenu({ payload }, { put, select }) {
-      const { menus } = yield select(({ app }) => app);
+      const { menus, locationPathname } = yield select(({ app }) => app);
       const menuItem = menus.filter(menu => menu.key === payload);
 
-      yield put(
-        routerRedux.push({
-          pathname: menuItem[0].path,
-        }),
-      );
+      if (locationPathname !== menuItem[0].path) {
+        yield put(
+          routerRedux.push({
+            pathname: menuItem[0].path,
+          }),
+        );
+      }
     },
     *logout({ payload }, { call, select }) {
       const login_url = yield select(({ app }) => app.account.login_url);
