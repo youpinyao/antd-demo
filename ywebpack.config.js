@@ -26,6 +26,9 @@ module.exports = {
   }, {
     include: '(node_modules/antd)',
     cssModules: false,
+  }, {
+    include: '(node_modules/lightgallery.js)',
+    cssModules: false,
   }],
   production: {
     publicPath: '//estatic.seeyouyima.com/my-dsp-agent-front/',
