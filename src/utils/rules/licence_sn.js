@@ -1,9 +1,9 @@
-import lodash from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 module.exports = [
   {
     validator(rule, value, callback) {
-      if (lodash.isEmpty(value)) {
+      if (isEmpty(value)) {
         callback();
         return;
       }

@@ -1,6 +1,6 @@
 import queryString from 'query-string';
 import cookies from 'js-cookie';
-import lodash from 'lodash';
+import startsWith from 'lodash/startsWith';
 import { routerRedux } from 'dva/router';
 import $ from 'jquery';
 import * as permissionService from 'services/permission';
@@ -173,12 +173,12 @@ export default {
     updateState(state, { payload }) {
       const mergeState = {};
       state.menus.forEach((menu) => {
-        if (lodash.startsWith(payload.locationPathname, menu.path)) {
+        if (startsWith(payload.locationPathname, menu.path)) {
           mergeState.selectedMenu = menu;
         }
         if (!mergeState.selectedMenu && menu.activePath) {
           menu.activePath.forEach((path) => {
-            if (lodash.startsWith(payload.locationPathname, path)) {
+            if (startsWith(payload.locationPathname, path)) {
               mergeState.selectedMenu = menu;
             }
           });

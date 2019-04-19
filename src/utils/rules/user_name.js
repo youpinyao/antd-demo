@@ -1,6 +1,6 @@
 import * as accountService from 'services/account';
 import debounce from 'lodash.debounce';
-import lodash from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 module.exports = (user_name) => {
   return [
@@ -18,7 +18,7 @@ module.exports = (user_name) => {
     },
     {
       validator: debounce((rule, value, callback) => {
-        if (lodash.isEmpty(value)) {
+        if (isEmpty(value)) {
           callback();
           return;
         }
