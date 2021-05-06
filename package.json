@@ -14,7 +14,7 @@
     "dva-loading": "^1.0.4",
     "jquery": "^1.12.4",
     "js-cookie": "^2.2.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "meetyou-antd-base": "^0.0.47",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.19.2",
