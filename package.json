@@ -17,7 +17,7 @@
     "lodash": "^4.17.4",
     "meetyou-antd-base": "^0.0.47",
     "mockjs": "^1.0.1-beta3",
-    "moment": "^2.19.2",
+    "moment": "^2.29.4",
     "query-string": "^5.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
